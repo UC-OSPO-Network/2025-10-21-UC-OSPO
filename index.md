@@ -15,7 +15,7 @@ startdate: 2025-10-21      # machine-readable start date for the workshop in YYY
 enddate: 2025-10-22        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Tim Dennis", "Reid Otsuji"] # boxed, comma-separated list of instructors' names as strings, like ["Laura Langdon", "Betty Jennings", "Betty Snyder"]
 helper: ["Laura Langdon", "Karla Padilla", "Hannah Sutherland"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["datascience+ospo@ucla.edu","second@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+email: ["datascience+ospo@ucla.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes: https://pad.carpentries.org/2025-uc-ospo  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 what3words:           # optional: what3words (https://what3words.com) address of the workshop venue, without leading slashes e.g. "globe.lessening.computers"
@@ -30,33 +30,6 @@ Edit the values in the block above to be appropriate for your workshop.
 If the value is not 'true', 'false', 'null', or a number, please use
 double quotation marks around the value, unless specified otherwise.
 And run 'make workshop-check' *before* committing to make sure that changes are good.
-{% endcomment %}
-
-
-
-{% comment %}
-8< ============= For a workshop delete from here =============
-For a workshop please delete the following block until the next dashed-line
-{% endcomment %}
-
-
-<div class="alert alert-danger">
-This is the workshop template. Delete these lines and use it to
-<a href="https://carpentries.github.io/workshop-template/customization/index.html">customize</a>
-your own website. If you are running a self-organized workshop or have not put
-in a workshop request yet, please also fill in
-<a href="{{site.amy_site}}/forms/self-organised/">this workshop request form</a>
-to let us know about your workshop and our administrator may contact you if we
-need any extra information.
-If this is a pilot workshop for a new lesson,
-set the `pilot` field to `true` in `_config.yml`.
-For workshops teaching a lesson in The Carpentries Incubator,
-remember to uncomment the `incubator_lesson_site`, `incubator_pre_survey`, and `incubator_post_survey`
-fields in `_config.yml`
-</div>
-
-{% comment %}
-8< ============================= until here ==================
 {% endcomment %}
 
 {% comment %}
@@ -83,28 +56,42 @@ It looks like you are setting up a website for a Software Carpentry curriculum b
 {% endunless %}
 {% endif %}
 
-{% comment %}
-EVENTBRITE
+<!-- REGISTRATION (Zoom) -->
+<h2 id="registration">Registration</h2>
+<div class="alert alert-info" role="region" aria-label="Registration links">
+  <p><strong>Please register on Zoom for each session:</strong></p>
+  <ul class="list-unstyled">
+    <li>
+      <strong>Session 1 — Getting Started with Better Research Software</strong><br>
+      Tue, Oct 21 · 12:00–2:00 PM PDT<br>
+      <a class="btn btn-primary btn-sm" href="https://ucla.zoom.us/meeting/register/H8mm-16jTlek7Et7zaB3uA" target="_blank" rel="noopener">
+        Register for Session 1
+      </a>
+    </li>
+    <li class="mt-3">
+      <strong>Session 2 — Writing Clearer, Better-Structured Code</strong><br>
+      Wed, Oct 22 · 12:00–2:00 PM PDT<br>
+      <a class="btn btn-primary btn-sm" href="https://ucla.zoom.us/meeting/register/ffG30PhZSVSSMPg-04y2dw" target="_blank" rel="noopener">
+        Register for Session 2
+      </a>
+    </li>
+  </ul>
 
-This block includes the Eventbrite registration widget if
-'eventbrite' has been set in the header.  You can delete it if you
-are not using Eventbrite, or leave it in, since it will not be
-displayed if the 'eventbrite' field in the header is not set.
-{% endcomment %}
-{% if page.eventbrite %}
-<strong>Some adblockers block the registration window. If you do not see the
-  registration box below, please check your adblocker settings.</strong>
-<div id="eventbrite-widget-container"></div>
-<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
-<script type="text/javascript">
-    window.EBWidgets.createWidget({
-        // Required
-        widgetType: 'checkout',
-        eventId: {{page.eventbrite}},
-        iframeContainerId: 'eventbrite-widget-container',
-    });
-</script>
-{% endif %}
+  <p class="mt-3 mb-0">
+    <em>This workshop is designed for researchers, graduate students, and early-career Research Software Engineers (RSEs) 
+    who already have some experience with Python, Git, and the shell.</em>
+  </p>
+
+  <hr>
+
+  <p class="mb-0"><strong>Forthcoming Sessions (dates TBA):</strong></p>
+  <ul>
+    <li>Code Correctness: Writing and automating tests</li>
+    <li>Software Documentation: Creating effective READMEs and metadata</li>
+    <li>Open Software Management & Collaboration: GitHub issues, citation, multi-developer workflows</li>
+    <li>Wrap-Up: FAIR principles and broader practices in research software</li>
+  </ul>
+</div>
 
 
 <h2 id="general">General Information</h2>
