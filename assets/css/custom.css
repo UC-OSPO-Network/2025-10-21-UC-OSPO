@@ -1,12 +1,16 @@
-.btn-primary {
-  color: #2774AE !important; /* UCLA Blue text */
-  background-color: #FFD100 !important; /* UCLA Gold background */
-  border-color: #FFD100 !important;
+/* Force white text on registration buttons */
+a.btn.btn-primary,
+a.btn.btn-primary:link,
+a.btn.btn-primary:visited {
+  color: #ffffff !important;
+  background-color: #2774AE !important; /* UCLA Blue */
+  border-color: #2774AE !important;
 }
 
-.btn-primary:hover,
-.btn-primary:focus {
+a.btn.btn-primary:hover,
+a.btn.btn-primary:focus,
+a.btn.btn-primary:active {
   color: #ffffff !important;
-  background-color: #FFB300 !important; /* darker gold hover */
-  border-color: #FFB300 !important;
+  background-color: #005587 !important; /* darker UCLA Blue */
+  border-color: #005587 !important;
 }
