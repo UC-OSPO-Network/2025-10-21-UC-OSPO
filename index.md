@@ -489,9 +489,9 @@ during the workshop.
 Please check the "Setup" page of
 <a href="{{site.incubator_lesson_site}}">the lesson homepage</a> for instructions to follow
 to obtain the software and data you will need to follow the lesson.
-
 <!-- HIGH-VIS SETUP CALLOUT -->
 <div class="alert alert-warning" role="region" aria-label="Software setup">
+  <h3 class="mb-3">🔧 Prepare Your Computer Before the Workshop</h3>
   <p><strong>Before you arrive (required): Complete the software setup for this lesson.</strong></p>
   <p class="mb-2">Follow the official instructions here:</p>
   <p>
