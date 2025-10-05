@@ -489,4 +489,32 @@ during the workshop.
 Please check the "Setup" page of
 <a href="{{site.incubator_lesson_site}}">the lesson homepage</a> for instructions to follow
 to obtain the software and data you will need to follow the lesson.
+
+<!-- HIGH-VIS SETUP CALLOUT -->
+<div class="alert alert-warning" role="region" aria-label="Software setup">
+  <p><strong>Before you arrive (required): Complete the software setup for this lesson.</strong></p>
+  <p class="mb-2">Follow the official instructions here:</p>
+  <p>
+    <a class="btn btn-primary btn-sm" href="https://carpentries-incubator.github.io/better-research-software/#software-setup" target="_blank" rel="noopener">Software Setup (overview)</a>
+    <a class="btn btn-primary btn-sm" href="https://carpentries-incubator.github.io/better-research-software/installation-instructions.html" target="_blank" rel="noopener">Installation Instructions (step-by-step)</a>
+  </p>
+
+  <hr>
+
+  <p class="mb-1"><strong>Quick pre-flight check (run these in your terminal):</strong></p>
+  <ul class="mb-2">
+    <li><code>git --version</code></li>
+    <li><code>python --version</code> (Python 3.x)</li>
+    <li><code>pip --version</code></li>
+  </ul>
+
+  <p class="mb-1"><strong>Tips:</strong></p>
+  <ul class="mb-2">
+    <li>Windows users: open <em>Command Prompt</em> or <em>PowerShell</em>. macOS/Linux: open <em>Terminal</em>.</li>
+    <li>If any command fails, revisit the installation page and re-run the relevant step.</li>
+  </ul>
+
+  <p class="mb-0"><em>Need help?</em> Join 15 minutes early or email <a href="mailto:datascience+ospo@ucla.edu">datascience+ospo@ucla.edu</a>.</p>
+</div>
+
 {% endif %}
