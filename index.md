@@ -64,7 +64,7 @@ It looks like you are setting up a website for a Software Carpentry curriculum b
     <li>
       <strong>Session 1 — Getting Started with Better Research Software</strong><br>
       Tue, Oct 21 · 12:00–2:00 PM PDT<br>
-      <a class="btn btn-primary btn-sm" href="https://ucla.zoom.us/meeting/register/H8mm-16jTlek7Et7zaB3uA" target="_blank" rel="noopener">
+      <a class="btn btn-primary btn-sm" href="https://ucla.zoom.us/meeting/register/ffG30PhZSVSSMPg-04y2dw#/registration" target="_blank" rel="noopener">
         Register for Session 1
       </a>
     </li>
